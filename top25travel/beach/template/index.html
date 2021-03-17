@@ -1,0 +1,13 @@
+<div class="container">
+    <title>20 ชายหาดสวย ที่ดีที่สุดในประเทศไทย</title>
+    <header>25 ชายหาดสวย ที่ดีที่สุดในประเทศไทย หน้าร้อนนี้ เที่ยวไหนดี?</header>
+    <div class="card" style="width: 18rem;">
+        {% for i in data %}
+        <img class="card-img-top" src="{{i.images}}" width="300" height="100" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{i.names}}</h5>
+            <!-- <p class="card-text">{{i.descriptions}}</p> -->
+            <a href="{{i.id}}" class="btn btn-primary">ดูรายละเอียด</a> {%endfor%}
+        </div>
+    </div>
+</div>
