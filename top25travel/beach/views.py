@@ -84,3 +84,6 @@ def data19(request):
 def data20(request):
     data = top25travel.objects.filter(names=" อ่าวพร้าว เกาะกูด ตราด")
     return render(request, 'data20.html',{'data':data})
+
+def viewbase(request):
+    return render(request,'base.html')

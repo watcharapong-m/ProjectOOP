@@ -39,4 +39,5 @@ urlpatterns = [
     path('19/', views.data18),
     path('20/', views.data19),
     path('21/', views.data20),
+    path('base/', views.viewbase)
 ]

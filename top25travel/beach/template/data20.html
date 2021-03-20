@@ -1,10 +1,9 @@
-<header>20 ชายหาดสวย ที่ดีที่สุดในประเทศไทย หน้าร้อนนี้ เที่ยวไหนดี?</header>
-<div class="card" style="width: 18rem;">
+{% extends "base.html" %} {% block content %}
+<div class="container">
     {% for i in data%}
     <img class="card-img-top" src="{{i.images}}" width="300" height="100" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">{{i.names}}</h5>
-        <p>{{i.descriptions}}</p>
-        {%endfor%}
-    </div>
+    <h5 class="card-title">{{i.names}}</h5>
+    <p>{{i.descriptions}}</p>
+    {%endfor%}
 </div>
+{% endblock content %}
